@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "zHenri",
+  "license": "MIT",
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.3.0",
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^18.11.19",
+    "eslint": "^8.33.0",
+    "prisma": "^4.9.0",
+    "prisma-erd-generator": "^1.2.5",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5",
+    "typescritp": "^1.0.0"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@prisma/client": "^4.9.0",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0",
+    "zod": "^3.20.2"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
